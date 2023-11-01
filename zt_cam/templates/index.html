@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signal Bars</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='main.js') }}" defer></script>
+</head>
+
+<body>
+    <div class="info-container">
+        <div class="status-container">
+            <h1 id="status">Checking...</h1>
+        </div>
+
+        <div class="latency-container">
+            <h2 id="latency">... ms</h2>
+        </div>
+
+        <div id="signal-container">
+            <!-- Display signal bars here -->
+        </div>
+    </div>
+    
+    <div class="video-container">
+        <img src="{{ url_for('video_feed') }}" alt="Video Feed">
+    </div>
+</body>
+
+</html>
+
+
+
+

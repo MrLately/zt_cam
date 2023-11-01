@@ -1,0 +1,47 @@
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.status-container, .latency-container, #signal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#signal-container {
+    align-items: flex-end;
+}
+
+.bar {
+    width: 5px;
+    height: 5px;
+    margin-right: 1.25px;
+    background-color: #cccccc;
+}
+
+.bar.active {
+    background-color: green;
+}
+
+.bar:nth-child(1) { height: 2.5px; }
+.bar:nth-child(2) { height: 5px; }
+.bar:nth-child(3) { height: 7.5px; }
+.bar:nth-child(4) { height: 10px; }
+.bar:nth-child(5) { height: 12.5px; }
+
+.video-container {
+    width: 100%;
+    max-width: 640px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.video-container img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
