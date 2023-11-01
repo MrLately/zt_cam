@@ -1,6 +1,8 @@
 zt_cam
 
-zt_cam is a Flask web application that provides essential information for ZeroTier networking and the connection between a Raspberry Pi and a control device. It offers the following features:
+You must already be familiar with Zerotier and able to make a network, add the devices, find their ZeroTier-assigned IP addresses.
+
+zt_cam is a Flask web app that provides information for ZeroTier networking and the connection between a Raspberry Pi and a control device. It offers the following features:
 
 Check the ZeroTier connection status (direct or relayed).
 Retrieve signal strength from a Huawei modem connected to the Raspberry Pi (tested with e3372h, e8372h, and a knockoff e3372h-510).
